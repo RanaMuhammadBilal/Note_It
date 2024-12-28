@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "958107193105",
+    "project_id": "note-it-a118d",
+    "storage_bucket": "note-it-a118d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958107193105:android:7990449ffdde7282d386b0",
+        "android_client_info": {
+          "package_name": "com.bildroid.noteit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnk4eqYbwYirMLfJSDIUQFCdx0wwMeMfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

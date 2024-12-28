@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Profile">
+
+    <TextView
+        android:id="@+id/profilee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profilee"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/displayName"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/displayEmail"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/verification"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Status :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/displayDate"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Created :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputOldPassword"
+                android:layout_width="250dp"
+                app:endIconTint="#474141"
+                app:startIconTint="#474141"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                android:textColorHint="#474141"
+                android:hint="Old Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextOldPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="#474141"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                app:endIconMode="password_toggle"
+                app:endIconTint="#474141"
+                android:textColorHint="#474141"
+                app:counterMaxLength="20"
+                app:counterTextColor="@color/defaultTextColor"
+                app:counterEnabled="true"
+                android:hint="New Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextNewPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnChangePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Change Password"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="DESIGN BY BILDROID"
+        android:textAlignment="center"
+        android:textColor="#474141"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

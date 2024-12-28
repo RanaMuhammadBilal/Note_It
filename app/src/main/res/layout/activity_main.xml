@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/profile"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginTop="20dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Welcome Back!"
+           android:textSize="30sp"
+           android:layout_marginLeft="25dp"
+           android:textColor="#7A6FED"
+           android:textStyle="bold"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Login In To Continue"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="26dp"
+           android:textStyle="bold"
+           android:textColor="#7A6FED"/>
+       
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:textColorHint="#989797"
+            android:textColor="@color/black"
+            android:backgroundTint="#E6E5E5"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/searchcustom"
+            android:hint="Enter Your Email"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/edt_Password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="#E6E5E5"
+            android:textColorHint="#989797"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:background="@drawable/searchcustom"
+            android:hint="Enter Your Password"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"/>
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#474141"
+            android:textColor="@color/black"
+            android:text="Show Password"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Forget Password?"
+        android:layout_marginTop="10dp"
+        android:textColor="#3E3C3C"
+        android:textStyle="bold"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim_loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading_one"
+        android:layout_marginTop="10dp"
+        app:lottie_loop="true"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="bottom"
+        android:layout_gravity="center_horizontal"
+        android:background="#f9f9f9"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textColor="#3E3C3C"
+        android:textStyle="bold"/>
+
+</LinearLayout>

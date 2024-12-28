@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f9f9f9"
+    tools:context=".SignUp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User"
+            android:textSize="52sp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#7A6FED"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good To See you Here"
+            android:textSize="24sp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textColor="#7A6FED"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:textColorHint="#989797"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/searchcustom"
+            android:hint="Enter Your Name"
+            android:paddingLeft="10dp"
+            android:backgroundTint="#E6E5E5"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/edt_emailS"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:backgroundTint="#E6E5E5"
+            android:textColor="@color/black"
+            android:textColorHint="#989797"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/searchcustom"
+            android:hint="Enter Your Email"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/edt_PasswordS"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="#E6E5E5"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#989797"
+            android:background="@drawable/searchcustom"
+            android:hint="Enter Your Password"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"/>
+        <CheckBox
+            android:id="@+id/checkBoxS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Show Password"
+            android:layout_marginLeft="25dp"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="25dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Want to Login?"
+        android:layout_marginTop="20dp"
+        android:textColor="#3E3C3C"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

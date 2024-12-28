@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cereteNotes">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarOfCereteNotes">
+        <EditText
+            android:id="@+id/titleOfCereteNotes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#B3A8A8"
+            android:paddingTop="12dp"
+            android:hint="Enter your note title here"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/contentOfCereteNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:gravity="top|left"
+        android:background="#faf7f7"
+        android:textColorHint="#989797"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:hint="Enter your note content here"
+        android:layout_below="@id/toolbarOfCereteNotes"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading_one"
+        android:id="@+id/anim_loading_create"
+        app:lottie_loop="true"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingSaveButtonOfCereteNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        app:maxImageSize="35dp"
+        android:src="@drawable/baseline_save_24" />
+
+</RelativeLayout>
